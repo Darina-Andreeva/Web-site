@@ -1,0 +1,268 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+
+@font-face {
+ font-family: Delicious; 
+ src: url('../fonts/repetitionDEMO.otf'); 
+ 
+}
+@font-face{
+	font-family: Devil;
+	 src: url('../fonts/FugazOne-Regular.ttf'); 
+}
+body{
+	background-color:#d5ff80;
+}
+img{
+	width:60px;
+	height:60px;
+}
+ 
+
+.navbar-nav >li >a {
+	margin-bottom:10px;
+        color:black;
+	background-color:white;
+}
+.navbar {
+	background-color:white;
+	width: 100%;
+      
+}
+.navbar-default {
+    height: 100px;
+}
+.nav a {	
+    font-size:20px;
+    text-align: center;   
+    text-decoration: none;
+	font-family:Delicious;
+	
+}
+.actives{
+	background-color:#d5ff80;	
+}
+.navbar-brand{
+	float:left;
+	height:70%;
+}
+.nav  a:hover {
+	box-shadow: 3px 0 2px -2px;
+	font-size: 24px;
+}
+.text-center h1{
+	font-size: 35px;
+	font-family:Delicious;
+	margin:30px;
+
+}
+.text-center  p{
+        font-size: 20px;
+	font-family: Devil;
+	margin-bottom:  60px;
+	
+}
+
+.image-position-right> img {
+      width: 100%;
+	  height:450px;
+      margin: auto;
+	  padding-top: 40px;
+	  padding-bottom:40px;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    
+  }
+ .carousel-caption{
+	 width:70%;
+	 color: white;
+	 text-align:center;
+	 font-size:18px;
+	 margin-bottom: 25px;
+		 
+ }
+ .carousel-caption  > a > h3  {
+	 text-decoration:none;  
+     color: #d5ff80;
+	 font-size: 20px;
+	 font-family: Devil;
+ }
+
+ .carousel-caption > p {
+	 color: #d5ff80;
+	 }
+.col-sm-4 > h3{
+	font-size:18px;
+	font-family: Devil;
+	margin:8px;
+	text-align:center;
+}	
+
+h1{
+	font-size:20px;
+	font-family: Devil;
+	text-align:center;
+	margin-top:22px;
+}
+.col-sm-3 > img{
+	width:200px;
+	height:250px;
+	padding-top:20px;
+		
+}
+.gallery{
+	text-align:center;
+}
+ .nice{
+	 font-size: 14px;
+	 font-family: Devil;
+	 position: absolute; 
+     top: 190px; 
+     left: 18px; 
+     width: 70%; 
+ }
+.col-sm-12{
+	margin-top: 30px;
+	text-align:justify;
+	font-family: Devil;
+	text-justify: inter-word;
+}
+ 
+.see{
+	margin:30px;
+	float:right;
+    
+}
+
+.footer2{ 
+	margin: 20px;
+	
+}	
+.fonts{
+  font-family: Devil;  
+}
+.input-group {
+   margin:inherit;
+   padding: 8px;
+}
+  input[type=text], input[type=password],input[type=email] {
+    display: block;
+    width: 90%; 
+    border: 1px solid #818181;
+    padding: 5px;
+}
+
+input[type=submit] , form a {
+    border: none;
+    padding: 6px;
+    text-decoration: none;
+    font-size: 12px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    color: black;
+    box-shadow: 0 1px 0 white;
+    -moz-box-shadow: 0 1px 0 white;
+    -webkit-box-shadow: 0 1px 0 white;
+}
+
+input[type=submit]:hover, form a:hover {
+   /* background: #007cc2;*/
+    cursor: pointer;
+ 
+}
+.input-group a {
+    text-decoration: none;
+    font-family: Devil;
+    font-size: 14px;
+    color: black;
+   
+   
+}
+.red{
+    color:red;
+}
+
+  @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+.nav a {
+        display:block;
+	position:relative;
+	float: center;
+	
+}
+ul.nav.navbar-nav{
+    background-color:white;
+}
+
+/* do responsive menu */
+.navbar-default {
+    height: 100%;
+    width: 100%;
+}
+.text-center {
+float:center;
+}
+.col-sm-4 > h3{
+text-align:left;
+}	
+ .img{
+	max-width: 100%;
+        height: auto;
+ }
+.nice{
+	 font-size: 16px;
+	 font-family: Devil;
+	 
+ }
+
+     
